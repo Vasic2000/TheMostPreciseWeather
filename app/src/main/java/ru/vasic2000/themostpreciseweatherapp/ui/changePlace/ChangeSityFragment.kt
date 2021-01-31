@@ -10,9 +10,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import ru.vasic2000.themostpreciseweatherapp.R
 
-class changeSityFragment : Fragment() {
+class ChangeSityFragment : Fragment() {
 
-    private lateinit var changeSityModel: changeSityModel
+    private lateinit var changeSityModel: ChangeSityModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -20,9 +20,9 @@ class changeSityFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         changeSityModel =
-                ViewModelProvider(this).get(changeSityModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
+                ViewModelProvider(this).get(ChangeSityModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_change_sity, container, false)
+        val textView: TextView = root.findViewById(R.id.change_sity)
         changeSityModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

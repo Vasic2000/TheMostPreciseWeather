@@ -21,8 +21,8 @@ class ForecastFragment : Fragment() {
     ): View? {
         forecastModel =
                 ViewModelProvider(this).get(ForecastModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
+        val root = inflater.inflate(R.layout.fragment_forecast, container, false)
+        val textView: TextView = root.findViewById(R.id.forecast)
         forecastModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
