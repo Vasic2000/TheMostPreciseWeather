@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TheMostPreciseWeatherApp</string>
+    <string name="title_weather">Exact weather</string>
+    <string name="title_forecast">Forecast</string>
+    <string name="title_place">Change place</string>
+    <string name="title_settings">Settings</string>
+</resources>

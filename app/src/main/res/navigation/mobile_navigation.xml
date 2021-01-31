@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_baseScreen">
+
+    <fragment
+        android:id="@+id/navigation_baseScreen"
+        android:name="ru.vasic2000.themostpreciseweatherapp.ui.forecast.ForecastFragment"
+        android:label="@string/title_weather"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_forecastScreen"
+        android:name="ru.vasic2000.themostpreciseweatherapp.ui.currentWeather.CurrentWeatherFragment"
+        android:label="@string/title_forecast"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_changeSity"
+        android:name="ru.vasic2000.themostpreciseweatherapp.ui.changePlace.changeSityFragment"
+        android:label="@string/title_place"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="ru.vasic2000.themostpreciseweatherapp.ui.changePlace.changeSityFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
