@@ -21,8 +21,8 @@ class CurrentWeatherFragment : Fragment() {
     ): View? {
         currentWeatherModel =
                 ViewModelProvider(this).get(CurrentWeatherModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
+        val root = inflater.inflate(R.layout.fragment_current_weather, container, false)
+        val textView: TextView = root.findViewById(R.id.current_weather)
         currentWeatherModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
